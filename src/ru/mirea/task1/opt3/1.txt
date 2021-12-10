@@ -1,0 +1,45 @@
+package ru.mirea.task1;
+
+public class Ball {
+    private String colour; // Цвет
+    private int price; // Цена
+
+    public Ball(String c, int pr){ // Конструктор с параметрами Цвет и Цена
+        colour = c;
+        price = pr;
+    }
+
+    public Ball(String c){ // Конструктор с параметром Цвет
+        colour = c;
+        price = 50;
+    }
+
+    public Ball(){ // Конструктор без параметров
+        colour = "green";
+        price = 40;
+    }
+
+    public String getColour() { // Получение цвета
+        return colour;
+    }
+
+    public void setColour(String colour) { // Ввод цвета
+        this.colour = colour;
+    }
+
+    public int getPrice() { // Получение цены
+        return price;
+    }
+
+    public void setPrice(int price) { // Ввод цены
+        this.price = price;
+    }
+
+    public String toString(){ // Вывод информации об объекте
+        return "Colour " + this.colour + ", price " + this.price;
+    }
+
+    public void findColour(){ // Метод для определения цвета мяча
+        System.out.println("The colour of this ball is " + colour);
+    }
+}

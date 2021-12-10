@@ -1,0 +1,15 @@
+package ru.mirea.task1;
+
+public class TestBall {
+    public static void main(String[] args) {
+        Ball b1 = new Ball("red", 10); // Объект b1 класса Ball
+        Ball b2 = new Ball("blue"); // Объект b2 класса Ball
+        Ball b3 = new Ball(); // Объект b2 класса Ball
+
+        System.out.println(b1); // Вывод информации об объекте b1
+        System.out.println(b2); // Вывод информации об объекте b2
+        System.out.println(b3); // Вывод информации об объекте b3
+
+        b2.findColour(); // вызов метода findColour
+    }
+}
